@@ -49,7 +49,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/5e974bafe865244cff5c6.jpg"
+AANG_IMG = "https://telegra.ph/file/5e974bafe865244cff5c6.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -141,13 +141,13 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🤝HELP🤝",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="🧑‍💻My Creator🧑‍💻",
-                                                                       url="t.me/teamishere")],
-                                                                                   [InlineKeyboardButton(text="ADD GRAND OFFICIAL TO YOUR GROUP",
+                                                                                   InlineKeyboardButton(text="😎 My Creator 😎",
+                                                                       url="t.me/ksfounder")],
+                                                                                   [InlineKeyboardButton(text="😘ADD AANY TO YOUR GROUP😘",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Source Code",
-                                                                       url="https://github.com/legendx22/GRANDROBOT")
-                                                                                 ]]))
+                                                                                   InlineKeyboardButton(text="⭐ Join on updates Channel ⭐",
+                                                                       url="t.me/kstoons")],
+
 
     else:
         update.effective_message.reply_text("Hi , Boss I am still alive only !")
